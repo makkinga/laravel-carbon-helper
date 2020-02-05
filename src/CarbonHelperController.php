@@ -7,15 +7,26 @@ use Carbon\Carbon;
 class CarbonHelperController
 {
 
+    protected $date;
     protected $carbon;
 
     /**
      * CarbonHelperController constructor.
-     * @param Carbon $carbon
      */
-    public function __construct(Carbon $carbon)
+    public function __construct($date)
     {
-        $this->carbon = $carbon;
+        $this->date = reset($date);
+
+        if ($this->date) {
+            $this->carbon = Carbon::parse($this->date);
+        } else {
+            $this->carbon = Carbon::now();
+        }
+    }
+
+    public function carbon()
+    {
+        return $this->carbon;
     }
 
 }

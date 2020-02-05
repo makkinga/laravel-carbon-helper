@@ -13,8 +13,8 @@ class CarbonHelperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('carbon', function () {
-            return new CarbonHelperController();
+        $this->app->singleton('carbon', function ($app, $params) {
+            return (new CarbonHelperController($params))->carbon();
         });
     }
 
