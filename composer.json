@@ -1,0 +1,16 @@
+{
+    "name": "makkinga/laravel-carbon-helper",
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^7.0@dev",
+        "nesbot/carbon": "^2.0@dev"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gydo Makkinga",
+            "email": "gydo@makkinga.online"
+        }
+    ],
+    "minimum-stability": "dev"
+}
