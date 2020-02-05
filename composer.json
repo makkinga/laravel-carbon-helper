@@ -2,7 +2,7 @@
     "name": "makkinga/laravel-carbon-helper",
     "require": {
         "php": "^7.2",
-        "illuminate/support": "^6.0",
+        "illuminate/support": "5.8.*|^6.0",
         "nesbot/carbon": "^2.0"
     },
     "autoload": {
