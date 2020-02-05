@@ -5,6 +5,14 @@
         "illuminate/support": "^7.0@dev",
         "nesbot/carbon": "^2.0@dev"
     },
+    "autoload": {
+        "psr-4": {
+            "Makkinga\\CarbonHelper\\": "src/"
+        },
+        "files": [
+            "src/CarbonHelper.php"
+        ]
+    },
     "license": "MIT",
     "authors": [
         {
